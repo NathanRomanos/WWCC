@@ -18,11 +18,10 @@ html {
 body {
 	background: #fff;
 	box-sizing: border-box;
-	color: #000;
+	color: #333;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.3rem;
 	letter-spacing: -0.015em;
-	text-align: center;
 }
 
 *,
@@ -70,7 +69,6 @@ h1,
 	font-family: 'Gentium Book Basic', serif;
 	font-weight: 800;
 	line-height: 1.138888889;
-  text-align: center;
 }
 
 h2,
@@ -99,7 +97,6 @@ h6,
 .heading-size-6 {
 	font-size: 1.6rem;
 	letter-spacing: 0.03125em;
-	text-transform: uppercase;
 }
 
 p {
@@ -266,7 +263,7 @@ a:focus {
 }
 
 
-/*--------------------- Header ------------------*/
+/*-------------------------------- Header -------------------------------*/
 .cv-headerContent{
   width: 100%;
   height: 80px;
@@ -282,12 +279,29 @@ a:focus {
 .cv-headerImg{
 	width: 100%;
 	height: 54vh;
-	background-image: url("../images/Corgi_header_2.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	position: relative;
 }
+
+.img1{
+	background-image: url("../images/Corgi_header_2.jpg");
+}
+.img2{
+	background-image: url("../images/Corgi_header_3.jpg");
+}
+.img3{
+	background-image: url("../images/Corgi_header_4.jpg");
+}
+.img4{
+	background-image: url("../images/Corgi_header_5.jpg");
+}
+.img5{
+	background-image: url("../images/Corgi_header_6.jpg");
+}
+
+
 
 .cv-title{
   color: #fff;
@@ -295,6 +309,7 @@ a:focus {
 	text-shadow: 2px 2px 6px #333;
   width: 100%;
   position: absolute;
+	text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -328,7 +343,7 @@ a:focus {
 }
 
 
-/*----------------------------Menus------------------------- */
+/*-------------------------------- Menus ------------------------------ */
 
 .cv-topMenu{
   list-style: none;
@@ -351,7 +366,7 @@ a:focus {
 }
 
 
-/*----------------------Footer--------------------------*/
+/*------------------------------- Footer --------------------------------*/
 
 .cv-footer{
   width: 100%;
@@ -389,6 +404,162 @@ a:focus {
   cursor: pointer;
 	margin-left: 20px;
 }
+
+
+/* ------------------------------ Page -------------------------------- */
+.cv-pageContainer{
+	width: 70%;
+	margin: 0 15%;
+}
+
+.cv-postContainer{
+	width: 100%;
+	height: auto;
+	margin-bottom: 4vh;
+}
+
+.cv-postImg{
+	width: 100%;
+	text-align: center;
+}
+
+.cv-postImg-img{
+	height: 45vh;
+	margin-bottom: 2vw;
+}
+
+.cv-postAttr{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2vw;
+}
+
+.cv-postAttr a{
+	transition: color 0.15s ease-in-out;
+}
+
+.cv-postAttr a:hover{
+	color: #FCA044;
+}
+
+.cv-postBody{
+	background-color: #f8f9fa;
+	padding: 1vw;
+}
+
+.cv-postBack{
+	background-color: #FCA044;
+	padding: 8px;
+	border: none;
+	border-radius: .25em;
+	color: #212529;
+	font-weight: 700;
+	transition: background-color 0.15s ease-in-out;
+	cursor: pointer;
+}
+
+.cv-postBack:hover{
+	background-color: #dd8b39;
+}
+
+.cv-postBack:not(:disabled):not(.disabled):active, .cv-postBack:not(:disabled):not(.disabled).active,
+.show{
+	background-color: #f9c590;
+	border: none;
+}
+
+/* ------------------------------ Sample -------------------------------- */
+.cv-sampleContainer{
+	width: 100%;
+	height: auto;
+	padding: 1vw;
+	margin-bottom: 80px;
+	background-color: #f8f9fa;
+	display: flex;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.cv-sampleContainer:hover{
+	background-color: rgba(0,0,0,0.05);
+}
+
+.cv-sampleHead{
+	width: 40%;
+}
+
+.cv-sampleThumb{
+	width: 80%;
+	margin: 1vw 0;
+}
+
+.cv-sampleBody{
+	width: 60%;
+	margin-left: 4vw;
+	padding: 1vw;
+	align-self: flex-end;
+	border-left: 4px solid #FFED10;
+}
+
+.cv-sampleLink{
+	background-color: #FCA044;
+	padding: 10px;
+	border-radius: .25em;
+	color: #212529;
+	font-weight: 700;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.cv-sampleLink:hover{
+	background-color: #dd8b39;
+}
+
+.cv-sampleLink:not(:disabled):not(.disabled):active, .cv-sampleLink:not(:disabled):not(.disabled).active,
+.show{
+	background-color: #f9c590;
+}
+
+.cv-sampleAttr{
+	margin-top: 1vw;
+	align-self: flex-end;
+}
+
+.cv-sampleAttr a{
+	transition: color 0.15s ease-in-out;
+}
+
+.cv-sampleAttr a:hover{
+	color: #FCA044;
+}
+
+/* --------------------------- Third party ----------------------------- */
+.form-control{
+	border: none;
+	border-bottom: 2px solid #ced4da;
+}
+
+.btn-primary{
+	background-color: #FCA044;
+	border-color: #FCA044;
+	color: #212529;
+	font-weight: 700;
+}
+
+.btn-primary:hover{
+	background-color: #dd8b39;
+	border-color: #dd8b39;
+	color: #212529;
+	font-weight: 700;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle{
+	background-color: #f9c590;
+	border-color: #f9c590;
+	color: #212529;
+}
+
+
 
 /* .cv-sidebarClose{
   display: none;

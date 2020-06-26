@@ -1,13 +1,14 @@
 $=jQuery;
 
 
-$('.cv-sidebarButton').click(function(){
-  $('.cv-sidebarSecondary').show();
-  $('.cv-sidebarButton').hide();
-  $('.cv-sidebarClose').show();
+$('.cv-burgerBtn').click(function(){
+  $('.cv-burgerContainer').show();
+  $('.cv-burgerClose').show();
 });
-$('.cv-sidebarClose').click(function(){
-  $('.cv-sidebarSecondary').hide();
-  $('.cv-sidebarButton').show();
-  $('.cv-sidebarClose').hide();
+$('.cv-burgerClose').click(function(){
+  $('.cv-burgerContainer').hide();
+  $('.cv-burgerBtn').show();
+  $('.cv-burgerClose').hide();
 });
+
+$(".woocommerce-input-wrapper").before('<br>');

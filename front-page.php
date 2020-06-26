@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <div class="container">
+  <div class="cv-pageContainer">
 
     <?php get_template_part('includes/section','content'); ?>
 

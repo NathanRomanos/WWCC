@@ -1,8 +1,6 @@
 <?php get_header('secondary'); ?>
 
-  <div class="container">
-
-    <h1 class="myTitle"> <?php the_title();?> </h1>
+  <div class="cv-pageContainer">
 
     <?php get_template_part('includes/section','content'); ?>
 

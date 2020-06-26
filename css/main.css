@@ -267,10 +267,9 @@ a:focus {
 .cv-headerContent{
   width: 100%;
   height: 80px;
-  margin-bottom: 4vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #333;
   color: #fff;
   position: relative;
@@ -317,7 +316,6 @@ a:focus {
 
 .cv-logo{
 	padding: 10px 0;
-	margin-right: 100px;
 	height: 100%;
 	display: inline-block;
 }
@@ -327,7 +325,13 @@ a:focus {
 }
 
 .cv-logoImg{
-	height: 100%;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-image: url('../images/WWCC_logo_2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 	vertical-align: unset;
 }
 
@@ -388,28 +392,24 @@ a:focus {
 	display: inline-block;
 }
 
+.cv-footerDetails{
+	border-left: 3px solid #FCA044;
+	margin-left: 30px;
+	padding-left: 16px;
+}
+
 .widget{
   margin-bottom: 50px;
   text-align: left;
   list-style: none;
 }
 
-.cv-sidebarButton, .cv-sidebarClose{
-  z-index: 100;
-  display: none;
-  color: white;
-  font-size: 3.5rem;
-  line-height: 100%;
-  font-weight: bolder;
-  cursor: pointer;
-	margin-left: 20px;
-}
 
 
 /* ------------------------------ Page -------------------------------- */
 .cv-pageContainer{
 	width: 70%;
-	margin: 0 15%;
+	margin: 2vh 15%;
 }
 
 .cv-postContainer{
@@ -559,17 +559,151 @@ a:focus {
 	color: #212529;
 }
 
-
-
-/* .cv-sidebarClose{
-  display: none;
+.woocommerce button.button.alt, .woocommerce a.button{
+	background-color: #FCA044;
+	border-color: #FCA044;
+	color: #212529;
+	font-weight: 700;
 }
 
-.cv-sidebarButton{
-  display: block;
+.woocommerce button.button.alt:hover, .woocommerce a.button:hover{
+	background-color: #dd8b39;
+	border-color: #dd8b39;
+	color: #212529;
+	font-weight: 700;
+}
+
+.woocommerce button.button.alt:not(:disabled):not(.disabled):active, .woocommerce button.button.alt:not(:disabled):not(.disabled).active,
+.show > .woocommerce button.button.alt.dropdown-toggle{
+	background-color: #f9c590;
+	border-color: #f9c590;
+	color: #212529;
+}
+
+.col-1, .col-2{
+	max-width: unset;
+}
+
+.woocommerce-input-wrapper{
+	display: block;
+	width: 100%;
+}
+
+.input-text{
+	border: none;
+	border-bottom: 2px solid #ced4da;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected]{
+	background-color: #FCA044;
 }
 
 
-.cv-sidebarButton:hover, .cv-sidebarClose:hover{
-color: #fc8c03;
-} */
+/*-----------------------------------Other---------------------------------*/
+
+.cv-burgerClose, .cv-burgerBtn, .cv-burgerContainer{
+	display: none;
+}
+
+
+/* ---------------------------Media queries------------------------------- */
+
+@media only screen and (max-width: 1100px){
+
+	.cv-pageContainer{
+		width: 90vw;
+		margin: 2vh 5vw;
+		text-align: center;
+	}
+
+	.cv-footer{
+		padding: 5vw;
+	}
+
+	.cv-footerContact, .cv-footerWidgets{
+		width: 50%;
+		margin: 0 50px;
+	}
+
+} /*end media query*/
+
+@media only screen and (max-width: 815px){
+
+	.cv-menuContainer{
+		display: none;
+	}
+
+	.cv-burgerBtn, .cv-sampleContainer{
+		display: block;
+	}
+
+	.cv-burgerContainer{
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(51,51,51,0.98);
+		position: fixed;
+		top: 0;
+		z-index: 100;
+	}
+
+	.cv-burgerClose{
+		position: absolute;
+		top: 5vw;
+		right: 5vw;
+		color: #fff;
+	}
+
+	.cv-burgerMenu{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.cv-burgerMenu .menu-item{
+		display: block;
+		flex-basis: 100vw;
+		color: #fff;
+	}
+
+	ul{
+		margin: 0;
+	}
+
+	.menu-item a:hover{
+		background-color: unset;
+		color: #FCA044;
+	}
+
+}
+
+@media only screen and (max-width: 450px){
+
+	.cv-title{
+		font-size: 3.6rem;
+	}
+
+	.cv-sampleHead{
+		width: 100%;
+	}
+
+	.cv-sampleBody{
+		width: 100%;
+		text-align: left;
+	}
+
+	.cv-footer{
+		padding: 5vw;
+		display: block;
+	}
+
+	.cv-footerContact, .cv-footerWidgets{
+		width: 100%;
+		display: block;
+		margin: 0;
+	}
+
+} /* end media query */

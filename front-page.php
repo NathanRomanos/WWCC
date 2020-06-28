@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 
-  <div class="cv-pageContainer">
+  <section class="page-wrap">
+    <div class="cv-pageContainer">
 
-    <?php get_template_part('includes/section','content'); ?>
+      <?php get_template_part('includes/section','content'); ?>
 
-  </div>
+    </div>
+  </section>
 
 <?php get_footer(); ?>

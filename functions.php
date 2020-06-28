@@ -38,8 +38,6 @@ add_theme_support('menus');
 register_nav_menus(
   array(
     'top-menu' => 'Top Menu Location',
-    'mobile-menu' => 'Mobile Menu Location',
-    'footer-menu' => 'Footer Menu Location'
     )
   );
 
@@ -56,18 +54,7 @@ register_nav_menus(
           array(
               'id'            => 'primary',
               'name'          => __( 'Primary Sidebar' ),
-              'description'   => __( 'This is just for the search function.' ),
-              'before_widget' => '<div id="%1$s" class="widget %2$s">',
-              'after_widget'  => '</div>',
-              'before_title'  => '<h3 class="widget-title">',
-              'after_title'   => '</h3>',
-          )
-      );
-      register_sidebar(
-          array(
-              'id'            => 'secondary',
-              'name'          => __( 'Secondary Sidebar' ),
-              'description'   => __( 'This sidebar can be attatched to the right hand side of your page.' ),
+              'description'   => __( 'These will appear in the footer' ),
               'before_widget' => '<div id="%1$s" class="widget %2$s">',
               'after_widget'  => '</div>',
               'before_title'  => '<h3 class="widget-title">',
@@ -150,7 +137,7 @@ register_nav_menus(
           'label'               => __( 'news', 'WWCC Theme' ),
           'description'         => __( 'News items about corgi wellfare, nutrition, grooming, corgi related events around the Wellington region.', 'WWCC Theme' ),
           'labels'              => $labels,
-          'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+          'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
           'taxonomies'          => array( 'topics' ),
           'hierarchical'        => false,
           'public'              => true,

@@ -9,18 +9,28 @@ Template Name: Contact
 
 <div class="cv-pageContainer">
 
+  <?php
+  if (have_posts()) :
+    while (have_posts()):
+      the_post();
+
+      the_content();
+
+    endwhile;
+   else:
+  endif;
+  ?>
+
   <!--Section: Contact v.2-->
 <section class="mb-4">
 
     <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
 
     <div class="row">
 
         <!--Grid column-->
         <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="contact-form" name="contact-form" action="../wp-content/themes/WWCC/mail.php" method="POST">
 
                 <!--Grid row-->
                 <div class="row">

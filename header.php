@@ -23,7 +23,7 @@
       <div class="cv-headerContent">
 
         <div class="cv-logo">
-          <a href="<?php echo "http://" . $_SERVER['SERVER_NAME']; ?>/wwcc/">
+          <a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/wwcc/">
             <div class="cv-logoImg"></div>
             <p class="cv-logoText">
               Wellington
